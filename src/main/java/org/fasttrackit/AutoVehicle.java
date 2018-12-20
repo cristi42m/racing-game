@@ -8,6 +8,7 @@ public class AutoVehicle extends Vehicle{
     boolean running;
     Engine engine;
 
-
-
+    public AutoVehicle(Engine engine) {
+        this.engine = engine;
+    }
 }

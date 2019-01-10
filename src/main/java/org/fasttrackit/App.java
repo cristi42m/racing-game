@@ -71,13 +71,21 @@ Vehicle vehicle1 =  new Vehicle();
 
        new AutoVehicle(new Engine());
 
-       vehicle1.accelerate(13);
-       vehicle2.accelerate(3);
+       vehicle1.accelerate(34.12);
+       vehicle2.accelerate(130,0.8);
 
-       new UFO().accelerate(13,0.8);
+       new UFO().accelerate(130,0.8);
+
+       // polymarphism ( an object cant take multiple forms)
+       Vehicle ufo = new  UFO();
+       // the type of the variable does NOT determine the object's behaviour
+       ufo.accelerate(200,2);
+
+        //The type of the variable determine what  methods can invoked
+       // We might need type casting (see below)
+       ((UFO) ufo) .concealCheating();
 
 
 
-
-
-}}
+}
+}

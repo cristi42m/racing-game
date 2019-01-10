@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.fasttrackit.cheater.UFO;
+
 /**
  * Hello world!
  *fdsafdas
@@ -14,16 +16,17 @@ public class App{
 //{
    public static void main( String[] args ) {
 //
-//        Engine engine = new Engine();
-//        engine.manufacturer = "Renault";
-//        engine.capacity = 1500;
-//
-//        Car car = new Car(engine);
-//        car.setName("Dacia");
-//        car.setColor("White");
-//        car.doorCount = 4;
-//        car.setMileage (7.5);
-//        car.running = true;
+        Engine engine = new Engine();
+        engine.manufacturer = "Renault";
+        engine.capacity = 1500;
+
+        Car car = new Car(engine);
+        car.setName("Dacia");
+        car.setColor("White");
+        car.doorCount = 4;
+        car.setMileage (7.5);
+        car.running = true;
+       System.out.println(car.toString());
 //
 //        double carTraveledDistance = car.accelerate(100, 2);
 //
@@ -70,6 +73,8 @@ Vehicle vehicle1 =  new Vehicle();
 
        vehicle1.accelerate(13);
        vehicle2.accelerate(3);
+
+       new UFO().accelerate(13,0.8);
 
 
 

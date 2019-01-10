@@ -12,8 +12,18 @@ public class AutoVehicle extends Vehicle{
         this.engine = engine;
     }
 
+    @Override
+    public String toString() {
+        return "AutoVehicle{" +
+                "running=" + running +
+                ", engine=" + engine +
+                '}';
+    }
+
     public AutoVehicle() {
 //        this.engine = new Engine();
         this (new Engine());
+
+
     }
 }

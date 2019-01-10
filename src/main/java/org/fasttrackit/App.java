@@ -64,6 +64,13 @@ Vehicle vehicle1 =  new Vehicle();
        System.out.println("Value from vehicle 3: " + vehicle3.vehicleCount);
 
 
+       new AutoVehicle();
+
+       new AutoVehicle(new Engine());
+
+       vehicle1.accelerate(13);
+       vehicle2.accelerate(3);
+
 
 
 

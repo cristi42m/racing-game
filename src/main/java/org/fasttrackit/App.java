@@ -10,43 +10,62 @@ package org.fasttrackit;
  */
 
 // this is a comment
-public class App 
-{
-    public static void main( String[] args ) {
+public class App{
+//{
+   public static void main( String[] args ) {
+//
+//        Engine engine = new Engine();
+//        engine.manufacturer = "Renault";
+//        engine.capacity = 1500;
+//
+//        Car car = new Car(engine);
+//        car.setName("Dacia");
+//        car.setColor("White");
+//        car.doorCount = 4;
+//        car.setMileage (7.5);
+//        car.running = true;
+//
+//        double carTraveledDistance = car.accelerate(100, 2);
+//
+//
+//
+//
+//
+//        System.out.println("Hello");
+//        System.out.println(car.toString());
+//
+//
+//
+//
+//        engine.manufacturer = "Microsoft";
+//
+//        engine = null;
+//
+//
+//
+//
+//        Car car2 = new Car(new Engine());
+//        car2.setName("sfa");
+//
+//        // some new content
+//
 
-        Engine engine = new Engine();
-        engine.manufacturer = "Renault";
-        engine.capacity = 1500;
+Vehicle vehicle1 =  new Vehicle();
+         vehicle1.vehicleCount ++ ;
 
-        Car car = new Car(engine);
-        car.setName("Dacia");
-        car.setColor("White");
-        car.doorCount = 4;
-        car.setMileage (7.5);
-        car.running = true;
+         Vehicle vehicle2 = new Vehicle();
+         vehicle2.vehicleCount = 2;
 
-        double carTraveledDistance = car.accelerate(100, 2);
+         Vehicle vehicle3 = new Vehicle();
+         Vehicle.vehicleCount = 3;
 
-
-
-
-
-        System.out.println("Hello");
-        System.out.println(car.toString());
+       System.out.println("Vault from vehicle 1: " + vehicle1.vehicleCount);
+       System.out.println("Value from vehicle 2: " + vehicle2.vehicleCount );
+       System.out.println("Value from vehicle 3: " + vehicle3.vehicleCount);
 
 
 
 
-        engine.manufacturer = "Microsoft";
-
-        engine = null;
 
 
-
-
-        Car car2 = new Car(new Engine());
-        car2.setName("sfa");
-
-        // some new content
-    }
-}
+}}

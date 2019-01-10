@@ -27,6 +27,11 @@ public class Vehicle {
     public double accelerate (double speed){
         return accelerate (speed, 1);
     }
+    protected Vehicle clone (){
+        Vehicle vehicle = new Vehicle();
+        // copy properties from current object
+        return vehicle;
+    }
 
     public String getName() {
         return name;

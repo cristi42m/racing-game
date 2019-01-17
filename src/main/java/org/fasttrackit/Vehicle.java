@@ -7,9 +7,11 @@ public class Vehicle {
    private String name;
    private String color;
    private double mileage;
+   private double fuelLevel;
+   private double totalTraveledFistance;
 
-    public Vehicle() {
-        vehicleCount++;
+
+    public Vehicle() { vehicleCount++;
     }
 
     public double accelerate(double speed, double durationInHours) {
@@ -21,9 +23,20 @@ public class Vehicle {
 
         System.out.println("Traveled distance :" + traveledDistance + " km ");
 
+        // same as; totalTraveledDistance = totaltraveledDistance + traveledDiastance
+        totalTraveledFistance += traveledDistance;
+        System.out.println("Total traveled distance: " + totalTraveledFistance);
+
+        double spentFuel = traveledDistance * mileage / 100;
+
+        fuelLevel -= spentFuel;
+        System.out.println("Remaining fuel: " + fuelLevel);
+
+
+
         return traveledDistance;
     }
-     // Exampole of method overloading
+     // Example of method overloading
     public double accelerate (double speed){
         return accelerate (speed, 1);
     }
@@ -55,6 +68,22 @@ public class Vehicle {
 
     public void setMileage(double mileage) {
         this.mileage = mileage;
+    }
+
+    public double getFuelLevel() {
+        return fuelLevel;
+    }
+
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
+    }
+
+    public double getTotalTraveledFistance() {
+        return totalTraveledFistance;
+    }
+
+    public void setTotalTraveledFistance(double totalTraveledFistance) {
+        this.totalTraveledFistance = totalTraveledFistance;
     }
 
     @Override
